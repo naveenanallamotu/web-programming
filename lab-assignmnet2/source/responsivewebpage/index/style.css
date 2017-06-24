@@ -1,0 +1,42 @@
+.mainimage {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+h1{
+    text-align: right;
+    font-family: 'Times New Roman';
+
+}
+h4{
+    text-align: right;
+    font-family: 'Times New Roman';
+   margin-bottom: 0px;
+}
+
+.align {
+    top:60%;
+    display: block;
+    margin-top: 5%;
+    align: middle !important;
+}
+.images{
+    clear: both;
+    padding: 5px;
+}
+
+div.place {
+    display:inline-block;
+    float:left;
+}
+
+text{
+    text-align:center;
+}
+
+
+
