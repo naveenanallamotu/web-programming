@@ -1,0 +1,21 @@
+input {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color:green;
+    margin: 8px 0;
+    padding: 14px 40px;
+}
+input {
+    width: 50%;
+}
+body {
+    background-color: green;
+}
