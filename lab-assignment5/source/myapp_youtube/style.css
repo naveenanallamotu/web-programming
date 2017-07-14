@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body  {
+  background-color: red;
+}
+
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+
+#searchingme {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid darkolivegreen;
+  border-radius: 3px
+}
+
+#attributedform button {
+  background-color: black;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+}
+
+
+/* Result Grid styles */
+
+#searchadverb {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.row {
+  display: table;
+}
+
+.col {
+  display: table-cell;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  background: red;
+  text-align: center;
+}
+
+.col:hover {
+  border: 3px solid black;
+}
+
+.see-more a {
+  color: white;
+  text-decoration: none;
+}
+
+.see-more a:hover {
+  font-weight: bold;
+}
+
+.btn {
+  padding: 15px;
+}
+
+.btn button {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.btn button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+#zero {
+  margin-top: 50px;
+}

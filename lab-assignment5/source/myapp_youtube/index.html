@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>A page that redirect you toi youtube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Music on your tips</h1>
+        <section id="f-attribute">
+            <form id="attributedform">
+                <input type="text" name="searchingme" id="searchingme" placeholder="search......" required>
+                <button class ="btn" type="submit">Enjoy</button>
+            </form>
+        </section>
+        <section id="searchadverb" hidden>
+            <div class="row row-1">
+                <div class="col col-1 result"></div>
+                <div class="col col-2 result"></div>
+                <div class="col col-3 result"></div>
+            </div>
+            <div class="btn">
+                <button class="pressp" disabled>< Previous</button>
+                <button class="pressn">Next ></button>
+            </div>
+        </section>
+        <section id="zero" hidden>
+            <p><b>No avaiable content</b></p>
+        </section>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
