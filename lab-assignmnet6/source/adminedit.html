@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Edit</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <style>
+        button{
+
+            background-color: darkred;
+            border: none;
+            height: auto;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+            border-raidus: 20%;
+
+        }
+
+    </style>
+
+</head>
+<body style="text-align: center;background-repeat: no-repeat;background-size:cover; color : darkred"  background="http://www.qualkampf.org/file/2017/05/help_when_you_need_it_most.jpg">
+
+
+<h1>admin operations</h1>
+
+<h3> cna delete the records </h3>
+
+<div data-ng-app="app" ng-controller="MainCtrl" ng-init="getData()">
+
+
+<h4> student details </h4>
+
+    <table style="text-align: center;background-color: darkred;color: white;margin-left:30%" border="1">
+        <thead>
+        <tr>
+            <th style="text-align: left"> First Name </th>
+            <th style="text-align: left"> Last Name </th>
+            <th style="text-align: left"> Email </th>
+            <th style="text-align: left"> Grade </th>
+            <th style="text-align: left"> Age </th>
+            <th style="text-align: left"> Address </th>
+            <th style="text-align: left"> phone Number</th>
+
+        </tr>
+        </thead>
+
+
+
+        <tbody ng-repeat="student in list">
+        <td>{{student.sfname}}</td>
+        <td> {{student.slname}}</td>
+        <td> {{student.semail}}</td>
+        <td> {{student.sgrade}}</td>
+        <td> {{student.sage}}</td>
+        <td> {{student.sadd}}</td>
+        <td> {{student.sphone}}</td>
+        </tbody>
+
+    </table>
+
+    <br>
+
+
+    <label> select the student to delete </label>
+<input type="text" title="name" ng-model="vm.name">
+<button  data-ng-click="getData()"> Get Details  </button>
+<br>
+<br>
+<p>details to be deleted</p>
+<table style="text-align: center;background-color: darkred;color: white;margin-left:30%" border="1">
+    <thead>
+    <tr>
+        <th style="text-align: left"> First Name </th>
+        <th style="text-align: left"> Last Name </th>
+        <th style="text-align: left"> Email </th>
+        <th style="text-align: left"> Grade </th>
+        <th style="text-align: left"> Age </th>
+        <th style="text-align: left"> Address </th>
+        <th style="text-align: left"> phone Number</th>
+
+    </tr>
+    </thead>
+
+
+    <tbody >
+    <td>{{list1.sfname}}</td>
+    <td> {{list1.slname}}</td>
+    <td> {{list1.semail}}</td>
+    <td> {{list1.sgrade}}</td>
+    <td> {{list1.sage}}</td>
+    <td> {{list1.sadd}}</td>
+    <td> {{list1.sphone}}</td>
+    </tbody>
+
+</table>
+
+<br>
+
+
+
+    <button  data-ng-click="delete()" onclick=window.location.href="adminmodule.html">delete</button>
+    <a href="studentmoduleadd.html"> <button>Edit</button></a>
+    <button  onclick=window.location.href="adminmodule.html">home</button>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student Details</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <style>
+        .asdet{
+            text-align: center;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            height: 150px;
+        }
+        .ss{
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+<body data-ng-app="app" ng-controller="sacontroller" style="background-color: aliceblue" background="http://www.qualkampf.org/file/2017/05/help_when_you_need_it_most.jpg" class="ss">
+
+<div class="asdet">
+<a class="asdet1">
+
+    <h1>Welcome Admin!</h1>
+    <h3>Add Students to student List</h3>
+    <ul>
+        <li>
+            <label>Enter Student First Name</label>
+            <input type="text" name="First Name" placeholder="First Name" ng-model="sfname" required >
+        </li>
+        <br>
+
+        <li>
+            <label>Enter Student Last Name</label>
+            <input type="text" name="Last Name" placeholder="Last Name" ng-model="slname" required >
+        </li>
+        <br>
+        <li>
+            <label>Enter Student Email</label>
+            <input type="email" name="Email" placeholder="email" ng-model="semail" required>
+        </li>
+        <br>
+        <li>
+            <label>Enter Student Grade</label>
+            <input type="text" name="Grade" placeholder="Grade" ng-model="sgrade" required >
+        </li>
+
+        <br>
+
+        <li>
+            <label>Enter Student Age</label>
+            <input type="number" name="Age" placeholder="Age" ng-model="sage" required >
+        </li>
+        <br>
+        <li>
+            <label>Enter Student Address</label>
+            <input type="text" name="Address" placeholder="City" ng-model="sadd" required >
+        </li>
+        <br>
+        <li>
+            <label>Enter Student Phone Number</label>
+            <input type="number" name="Phone" placeholder="Phone Number" ng-model="sphone" required >
+        </li>
+
+    </ul>
+<button data-ng-click="addsdetails()" onclick=window.location.href="adminmodule.html" style="background-color: aqua"> Add Student Details </button>
+    <button onclick=window.location.href="adminmodule.html" style="background-color: aqua">Go to Mian Page</button></a>
+
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

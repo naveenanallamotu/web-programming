@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page Admin</title>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/app.js"></script>
+    <style>
+        .ss{
+            color: darkred;
+        }
+        button{
+
+            background-color: darkred;
+            border: none;
+            height: auto;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+            border-raidus: 20%;
+
+        }
+    </style>
+
+</head>
+
+<body style="text-align: center;background-repeat: no-repeat;background-size:cover;color:darkred"  data-ng-app="app" ng-controller="MainCtrl" ng-init="getData()" background="http://www.qualkampf.org/file/2017/05/help_when_you_need_it_most.jpg" class="ss">
+
+<h3>Admin operatons </h3>
+
+<table style="text-align: center;background-color: darkred;color: white;margin-left:30%" border="1">
+<thead>
+<tr>
+    <th style="text-align: left"> First Name </th>
+    <th style="text-align: left"> Last Name </th>
+    <th style="text-align: left"> Email </th>
+    <th style="text-align: left"> Grade </th>
+    <th style="text-align: left"> Age </th>
+    <th style="text-align: left"> Address </th>
+    <th style="text-align: left"> phone Number</th>
+
+</tr>
+</thead>
+
+
+
+    <tbody ng-repeat="student in list">
+    <td>{{student.sfname}}</td>
+    <td> {{student.slname}}</td>
+    <td> {{student.semail}}</td>
+    <td> {{student.sgrade}}</td>
+    <td> {{student.sage}}</td>
+    <td> {{student.sadd}}</td>
+    <td> {{student.sphone}}</td>
+    </tbody>
+
+
+
+</table>
+
+<br>
+<a href="studentmoduleadd.html"><button>Add Student details</button></a>
+<a href="adminedit.html" ><button >Edit or delete student details</button></a>
+<a href="homepage.html"><button>Sign Out</button> </a>
+</body>
+</html>

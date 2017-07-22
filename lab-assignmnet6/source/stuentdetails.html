@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student Details</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <style>
+        .asdet{
+            text-align: center;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            height: 150px;
+        }
+    </style>
+
+</head>
+<body data-ng-app="app" ng-controller="sacontroller" style="text-align: center;background-repeat: no-repeat;background-size:cover" background="http://www.qualkampf.org/file/2017/05/help_when_you_need_it_most.jpg">
+
+<div class="asdet">
+    <a class="asdet1">
+        <div style="height:30%;width:30%">
+        <h1>Enter your details to enroll</h1>
+        <ul style="list-style-type: none">
+            <li>
+                <input type="text" name="First Name" placeholder="First Name" ng-model="sfname" required >
+            </li>
+            <br>
+
+            <li>
+                <input type="text" name="Last Name" placeholder="Last Name" ng-model="slname" required >
+            </li>
+            <br>
+            <li>
+                <input type="email" name="Email" placeholder="email" ng-model="semail" required>
+            </li>
+            <br>
+            <li>
+                <input type="text" name="Grade" placeholder="Grade" ng-model="sgrade" required >
+            </li>
+
+            <br>
+
+            <li>
+                <input type="number" name="Age" placeholder="Age" ng-model="sage" required >
+            </li>
+            <br>
+            <li>
+                <input type="text" name="Address" placeholder="City" ng-model="sadd" required >
+            </li>
+            <br>
+            <li>
+                <input type="number" name="Phone" placeholder="Phone Number" ng-model="sphone" required >
+            </li>
+
+        </ul>
+
+        <button data-ng-click="addsdetails()" onclick=window.location.href="index.html" style="background-color: black;color: white"> Add</button>
+        <button onclick=window.location.href="index.html" style="background-color: black;color: white">student details</button></a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
