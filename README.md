@@ -5,3 +5,5 @@ lab-assignment2: https://github.com/naveenanallamotu/web-programming/wiki/lab-as
 lab-assignment4:https://github.com/naveenanallamotu/web-programming/wiki/lab-assignment4
 lab-assignmnet5:https://github.com/naveenanallamotu/web-programming/wiki/lab-assignmnet5
 lab-assignmnet3:https://github.com/naveenanallamotu/web-programming/wiki/lab-assignment3
+lab-assignmnet7:https://github.com/naveenanallamotu/web-programming/wiki/lab-assignment-7
+lab-assignmnet6:https://github.com/naveenanallamotu/web-programming/wiki/lab-assignmnet6
