@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">textconversion</string>
+    <string name="action_settings">Settings</string>
+    <string name="speech_to_text">Speech conversion</string>
+    <string name="speech_to_text_output">Text conversion</string>
+</resources>
